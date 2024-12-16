@@ -1,0 +1,111 @@
+<!--Index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<title>ARYAN WEBSITE</title>
+<head>
+    <link rel="icon" href="logo.png">
+    <style>
+        /* Style.css */
+
+/* Apply styles to the body */
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the container */
+.container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px
+        rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the header */
+.header {
+    text-align: center;
+}
+
+/* Style the h1 element */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style the hr element */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Style the input field */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style the QR code div */
+.qrcode {
+    margin: 20px 0;
+}
+
+/* Style the button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+
+    <!-- External QR code library -->
+    <!--This is the liberary which helps
+        to convert simple data to the images-->
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box">
+            <h1>
+                QR Code Generator
+            </h1>
+            <hr />
+            <div class="sqrcode"></div>
+            <div class="qrcode"></div>
+            <input type="text" 
+                   placeholder="Paste a URL or enter 
+                                text, then press enter" 
+                   onchange="generateQr()" />
+            <!--generateQr() is the fuction which helps
+                to convert data into QR using the js library-->
+        </div>
+    </div>
+    <script src="./script1.js"></script>
+</body>
+
+</html>
