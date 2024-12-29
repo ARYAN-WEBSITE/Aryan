@@ -1,5 +1,5 @@
 // Initialize balance and transaction history
-let balance = 105;  // Initial balance in INR
+let balance = 112;  // Initial balance in INR
 const balanceElement = document.getElementById("balance");
 const transactionList = document.getElementById("transaction-list");
 
@@ -10,6 +10,13 @@ const transactions = [
     { amount: -5, description: "Withdraw", date: "2024-12-27 " },
     { amount: 10, description: "Deposit", date: "2024-12-27 " },
     { amount: 5, description: "Deposit", date: "2024-12-29 " },
+    { amount: 1, description: "Deposit", date: "2024-12-29 " },
+    { amount: 2, description: "Deposit", date: "2024-12-29 " },
+  { amount: 2, description: "Deposit", date: "2024-12-29 " },
+  { amount: 1, description: "Deposit", date: "2024-12-29 " },
+  { amount: 1, description: "Deposit", date: "2024-12-29 " },
+  
+  
   
    
 ];
